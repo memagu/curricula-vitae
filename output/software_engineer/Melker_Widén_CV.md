@@ -17,12 +17,13 @@ Self-taught developer with a strong passion for computer science, physics, and m
 ## Lunds Tekniska Högskola (LTH), Lund University, Civilingenjör (Master of Science in Engineering) in Computer Engineering in Computer Engineering
 
 - Aug 2024 – May 2029
+- Currently pursuing an integrated Bachelor's and Master's program in Computer Engineering, leading to a Civilingenjör (Master of Science in Engineering)
 
 ## Anna Whitlocks gymnasium (Anna Whitlock's high school), High School Diploma in Natural Sciences - Life Science profile
 
 - Aug 2021 – May 2023
 - Grades: 21.56/22.5 merit points.
-- Nominated participant, Molecular Frontiers symposium, 2022.
+- Nominated participant, Molecular Frontiers symposium: A Nano Focus on Quantum Material, 2022.
 - Awarded a prestigious stipend, recognizing the top 3 of over 700 graduates for exceptional analytical abilities, teamwork, and other key strengths.
 
 # Experience

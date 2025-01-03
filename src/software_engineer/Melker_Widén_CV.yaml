@@ -24,6 +24,9 @@ cv:
         degree: Civilingenjör (Master of Science in Engineering) in Computer Engineering
         start_date: 2024-08
         end_date: 2029-05
+        highlights:
+          - Currently pursuing an integrated Bachelor's and Master's program in Computer Engineering, leading to a
+            Civilingenjör (Master of Science in Engineering)
       - institution: Anna Whitlocks gymnasium (Anna Whitlock's high school)
         area: Natural Sciences - Life Science profile
         degree: High School Diploma
@@ -31,7 +34,7 @@ cv:
         end_date: 2023-05
         highlights:
           - "Grades: 21.56/22.5 merit points."
-          - "Nominated participant, Molecular Frontiers symposium, 2022."
+          - "Nominated participant, Molecular Frontiers symposium: A Nano Focus on Quantum Material, 2022."
           - Awarded a prestigious stipend, recognizing the top 3 of over 700 graduates for exceptional analytical
             abilities, teamwork, and other key strengths.
     experience:
@@ -87,8 +90,8 @@ design:
   use_icons_for_connections: false
   margins:
     page:
-      top: 2 cm
-      bottom: 2 cm
+      top: 1.7 cm
+      bottom: 1.7 cm
       left: 2 cm
       right: 2 cm
     section_title:
