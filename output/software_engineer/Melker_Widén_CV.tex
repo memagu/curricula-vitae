@@ -1,0 +1,401 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % seperation between body and page edge from the top
+    bottom=2 cm, % seperation between body and page edge from the bottom
+    left=2 cm, % seperation between body and page edge from the left
+    right=2 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Melker Widén's CV},
+    pdfauthor={Melker Widén},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+\usepackage{charter}
+\usepackage{graphicx} % for the profile picture
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in Jan 2025}\hspace{\widthof{Last updated in Jan 2025}}
+    }}}%
+  }%
+}%
+
+\newenvironment{twocolheadercontainer}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 0.2\linewidth}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for headers with profile pictures
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont Melker Widén
+
+        \vspace{5 pt}
+
+        \normalsize
+        \mbox{Lund, Sweden}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{mailto:melker.widen@gmail.com}{melker.widen@gmail.com}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{tel:+46-72-265-32-23}{072-265 32 23}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://www.mewi.dev/}{www.mewi.dev}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/memagu}{linkedin.com/in/memagu}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://github.com/memagu}{github.com/memagu}}%
+    \end{header}
+
+    \vspace{5 pt - 0.3 cm}
+
+
+    \section{Me}
+
+
+
+        
+        \begin{onecolentry}
+            Self-taught programmer with a strong passion for algorithms, physics, and mathematics. Extensive experience in Python and proficiency in languages such as Scala, Rust, C/C++, and C\#. Experienced in algorithms, data structures (\href{https://leetcode.com/}{LeetCode} and \href{https://open.kattis.com/}{Kattis}), web applications, graphics, and physics simulators, and gained cybersecurity experience through Capture The Flag (CTF) challenges. Recently worked as a 1st Line Support Agent at Onitio Sverige AB, honing problem-solving and customer service skills under pressure. Eager to leverage my skills in a software engineering role, which has long been my passion.
+        \end{onecolentry}
+
+
+    
+    \section{Education}
+
+
+
+        
+        \begin{twocolentry}{
+            Aug 2024 – May 2029
+        }
+            \textbf{Lunds Tekniska Högskola (LTH), Lund University}, Civilingenjör (Master of Science in Engineering) in Computer Engineering in Computer Engineering\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Currently pursuing an integrated Bachelor's and Master's program in Computer Engineering, leading to a Civilingenjör (Master of Science in Engineering) degree
+            \end{highlights}
+        \end{onecolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Aug 2021 – May 2023
+        }
+            \textbf{Anna Whitlocks gymnasium (Anna Whitlock's high school)}, High School Diploma in Natural Sciences - Life Science profile\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Grades: 21.56/22.5 merit points.
+                \item Nominated participant of the Molecular Frontiers symposium: A Nano Focus on Quantum Material, November 2022.
+            \end{highlights}
+        \end{onecolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Aug 2017 – May 2020
+        }
+            \textbf{Engelbrektsskolan}, Final Certificate from Primary School in Specialized Education in Mathematics (Grades 7–9)\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Grades: 315/340 merit points.
+                \item Top 30 out of 150 nationwide applicants admitted.
+                \item Studied high school math courses ma1c and ma2c in ninth grade.
+            \end{highlights}
+        \end{onecolentry}
+
+
+
+    
+    \section{Experience}
+
+
+
+        
+        \begin{twocolentry}{
+            Jan 2024 – Aug 2024
+        }
+            \textbf{1st Line Support Agent}, Onitio Sverige AB -- Stockholm, Sweden\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Provided technical support for retail and restaurant clients using systems like OPEN POS, Sitoo, Extenda Retail, and Loomis, troubleshooting issues in high-pressure situations via phone and remote tools such as TeamViewer and Kaseya.
+                \item Demonstrated clear and efficient communication, resolving complex technical issues while improving customer satisfaction and self-sufficiency.
+                \item Collaborated closely with the team to tackle complex issues, while also independently managing phone support during on-call shifts, making critical decisions to ensure smooth operations and maintain service quality.
+                \item Developed tools and scripts that reduced manual tasks and improved service efficiency.
+            \end{highlights}
+        \end{onecolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Oct 2022 – Aug 2023
+        }
+            \textbf{Learning mentor / Study Coach}, Studybuddy AB -- Stockholm, Sweden\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Delivered personalized on-site tutoring and homework support to middle and high school students, specializing in natural sciences (math, physics, chemistry, biology) and Python programming.
+                \item Adapted teaching techniques to individual student needs, fostering problem-solving abilities and boosting confidence, resulting in improved grades.
+            \end{highlights}
+        \end{onecolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            May 2021 – May 2021
+        }
+            \textbf{Outdoor Care/Cleaning}, Svevia AB -- Stockholm, Sweden\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Maintained cleanliness and upkeep of public spaces on Kungsholmen during a 3-week holiday position for the City of Stockholm.
+            \end{highlights}
+        \end{onecolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Apr 2019 – Apr 2019
+        }
+            \textbf{CAD-designer Internship}, Widén Innovation AB -- Eskilstuna, Sweden\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Designed and prototyped key and lock cylinder systems in SOLIDWORKS during a 2-week internship, gaining hands-on experience in mechanical design and fabrication.
+            \end{highlights}
+        \end{onecolentry}
+
+
+
+    
+    \section{Projects}
+
+
+
+        
+        \begin{twocolentry}{
+            \href{https://github.com/memagu/njord}{github.com/memagu/njord}
+        }
+            \textbf{njord}\end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed a native app to automate on-call support call logging and work time registration, significantly reducing effort and time for Onitio colleagues.
+                \item Tools Used: Python, SQLite, PySide6
+                \item Techniques Used: Hexagonal Architecture
+            \end{highlights}
+        \end{onecolentry}
+
+
+
+    
+    \section{Technologies}
+
+
+
+        
+        \begin{onecolentry}
+            \textbf{Languages:} Python, Scala, Rust, C, C++, C\#, HTML, CSS, Prolog, SQL
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Development Tools \& Technologies:} Docker, Git, GitHub
+        \end{onecolentry}
+
+
+    
+    \section{Languages}
+
+
+
+        
+        \begin{onecolentry}
+            \textbf{Swedish:} Native language (fluent)
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{English:} Fluent
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{German:} Basic level
+        \end{onecolentry}
+
+
+    
+
+\end{document}

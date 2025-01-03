@@ -1,0 +1,180 @@
+cv:
+  name: Melker Widén
+  location: Lund, Sweden
+  email: melker.widen@gmail.com
+  phone: tel:+46 (0) 72-265 32 23
+  website: https://www.mewi.dev/
+  social_networks:
+    - network: LinkedIn
+      username: memagu
+    - network: GitHub
+      username: memagu
+  sections:
+    me:
+      - Self-taught programmer with a strong passion for algorithms, physics, and mathematics. Extensive experience in
+        Python and proficiency in languages such as Scala, Rust, C/C++, and C#. Experienced in algorithms, data
+        structures ([LeetCode](https://leetcode.com/) and [Kattis](https://open.kattis.com/)), web applications,
+        graphics, and physics simulators, and gained cybersecurity experience through Capture The Flag (CTF) challenges.
+        Recently worked as a 1st Line Support Agent at Onitio Sverige AB, honing problem-solving and customer service
+        skills under pressure. Eager to leverage my skills in a software engineering role, which has long been my
+        passion.
+    education:
+      - institution: Lunds Tekniska Högskola (LTH), Lund University
+        area: Computer Engineering
+        degree: Civilingenjör (Master of Science in Engineering) in Computer Engineering
+        start_date: 2024-08
+        end_date: 2029-05
+        highlights:
+          - Currently pursuing an integrated Bachelor's and Master's program in Computer Engineering, leading to a
+            Civilingenjör (Master of Science in Engineering) degree
+      - institution: Anna Whitlocks gymnasium (Anna Whitlock's high school)
+        area: Natural Sciences - Life Science profile
+        degree: High School Diploma
+        start_date: 2021-08
+        end_date: 2023-05
+        highlights:
+          - "Grades: 21.56/22.5 merit points."
+          - "Nominated participant of the Molecular Frontiers symposium: A Nano Focus on Quantum Material,
+            November 2022."
+      - institution: Engelbrektsskolan
+        area: Specialized Education in Mathematics (Grades 7–9)
+        degree: Final Certificate from Primary School
+        start_date: 2017-08
+        end_date: 2020-05
+        highlights:
+          - "Grades: 315/340 merit points."
+          - Top 30 out of 150 nationwide applicants admitted.
+          - Studied high school math courses ma1c and ma2c in ninth grade.
+    experience:
+      - company: Onitio Sverige AB
+        position: 1st Line Support Agent
+        location: Stockholm, Sweden
+        start_date: 2024-01
+        end_date: 2024-08
+        highlights:
+          - Provided technical support for retail and restaurant clients using systems like OPEN POS, Sitoo,
+            Extenda Retail, and Loomis, troubleshooting issues in high-pressure situations via phone and remote tools
+            such as TeamViewer and Kaseya.
+          - Demonstrated clear and efficient communication, resolving complex technical issues while improving customer
+            satisfaction and self-sufficiency.
+          - Collaborated closely with the team to tackle complex issues, while also independently managing phone support
+            during on-call shifts, making critical decisions to ensure smooth operations and maintain service quality.
+          - Developed tools and scripts that reduced manual tasks and improved service efficiency.
+      - company: Studybuddy AB
+        position: Learning mentor / Study Coach
+        location: Stockholm, Sweden
+        start_date: 2022-10
+        end_date: 2023-08
+        highlights:
+          - Delivered personalized on-site tutoring and homework support to middle and high school students,
+            specializing in natural sciences (math, physics, chemistry, biology) and Python programming.
+          - Adapted teaching techniques to individual student needs, fostering problem-solving abilities and boosting
+            confidence, resulting in improved grades.
+      - company: Svevia AB
+        position: Outdoor Care/Cleaning
+        location: Stockholm, Sweden
+        start_date: 2021-05
+        end_date: 2021-05
+        highlights:
+          - Maintained cleanliness and upkeep of public spaces on Kungsholmen during a 3-week holiday position for the City of Stockholm.
+      - company: Widén Innovation AB
+        position: CAD-designer Internship
+        location: Eskilstuna, Sweden
+        start_date: 2019-04
+        end_date: 2019-04
+        highlights:
+          - Designed and prototyped key and lock cylinder systems in SOLIDWORKS during a 2-week internship, gaining
+            hands-on experience in mechanical design and fabrication.
+    projects:
+      - name: njord
+        date: "[github.com/memagu/njord](https://github.com/memagu/njord)"
+        highlights:
+          - Developed a native app to automate on-call support call logging and work time registration, significantly
+            reducing effort and time for Onitio colleagues.
+          - "Tools Used: Python, SQLite, PySide6"
+          - "Techniques Used: Hexagonal Architecture"
+    technologies:
+      - label: Languages
+        details: Python, Scala, Rust, C, C++, C#, HTML, CSS, Prolog, SQL
+      - label: Development Tools & Technologies
+        details: Docker, Git, GitHub
+    languages:
+      - label: Swedish
+        details: Native language (fluent)
+      - label: English
+        details: Fluent
+      - label: German
+        details: Basic level
+design:
+  theme: engineeringresumes
+  font: Charter
+  font_size: 10pt
+  page_size: letterpaper
+  color: black
+  disable_external_link_icons: true
+  disable_page_numbering: true
+  disable_last_updated_date: true
+  header_font_size: 25 pt
+  text_alignment: left-aligned
+  separator_between_connections: $|$
+  use_icons_for_connections: false
+  margins:
+    page:
+      top: 2 cm
+      bottom: 2 cm
+      left: 2 cm
+      right: 2 cm
+    section_title:
+      top: 0.3 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0 cm
+      vertical_between: 0.2 cm
+      date_and_location_width: 4.5 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 5 pt
+      bottom: 5 pt
+      horizontal_between_connections: 10 pt
+locale_catalog:
+  phone_number_format: national
+  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  last_updated_date_style: Last updated in TODAY
+  date_style: MONTH_ABBREVIATION YEAR
+  month: month
+  months: months
+  year: year
+  years: years
+  present: present
+  to: –
+  abbreviations_for_months:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - June
+    - July
+    - Aug
+    - Sept
+    - Oct
+    - Nov
+    - Dec
+  full_names_of_months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+rendercv_settings:
+  bold_keywords: [ ]
