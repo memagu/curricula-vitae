@@ -1,1 +1,6 @@
+# Ensure LF in text files
 * text eol=lf
+
+# Mark PDF and PNG as binary files
+*.pdf binary
+*.png binary
