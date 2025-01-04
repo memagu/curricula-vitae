@@ -1,5 +1,5 @@
 # curricula-vitae
-My curricula vitae made using [rendercv](https://rendercv.com/).
+My curricula vitae made using [rendercv](https://github.com/rendercv/rendercv).
 
 - ## Software Engineering
 <p justify="center">
