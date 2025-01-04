@@ -12,7 +12,7 @@ cv:
   sections:
     me:
       - Self-taught developer with a strong passion for computer science, physics, and mathematics. Highly proficient in
-        Python and Scala, with experience in languages such as Rust, C/C++, and C#. Knowledgeable in data
+        Python and Scala, with experience in languages such as Rust, C/C++, and C#. Skilled in data
         structures & algorithms ([LeetCode](https://leetcode.com/) and [Kattis](https://open.kattis.com/)),
         networking, graphics, physics simulation, and cybersecurity (Capture The Flag challenges), among other areas.
         Recently worked as a First Line Support Agent at Onitio Sverige AB, honing problem-solving and customer service
@@ -27,16 +27,16 @@ cv:
         highlights:
           - Currently pursuing an integrated Bachelor's and Master's program in Computer Engineering, leading to a
             Civilingenjör (Master of Science in Engineering)
-      - institution: Anna Whitlocks gymnasium (Anna Whitlock's high school)
+      - institution: Anna Whitlocks gymnasium
         area: Natural Sciences - Life Science profile
         degree: High School Diploma
         start_date: 2021-08
         end_date: 2023-05
         highlights:
           - "Grades: 21.56/22.5 merit points."
-          - "Nominated participant, Molecular Frontiers symposium: A Nano Focus on Quantum Material, 2022."
           - Awarded a prestigious stipend, recognizing the top 3 of over 700 graduates for exceptional analytical
             abilities, teamwork, and other key strengths.
+          - "Selected participant at Molecular Frontiers symposium: A Nano Focus on Quantum Material, November 2022."
     experience:
       - company: Onitio Sverige AB
         position: 1st Line Support Agent
@@ -55,8 +55,9 @@ cv:
         start_date: 2022-10
         end_date: 2023-08
         highlights:
-          - Delivered personalized on-site tutoring in natural sciences and Python, boosting students' confidence,
-          - problem-solving skills, and grades.
+          - Delivered personalized on-site tutoring in natural sciences and
+            Python, boosting students' confidence, problem-solving skills, and
+            grades.
     projects:
       - name: njord
         date: "[github.com/memagu/njord](https://github.com/memagu/njord)"
@@ -68,8 +69,8 @@ cv:
     technologies:
       - label: Languages
         details: Python, Scala, Rust, C, C++, C#, HTML, CSS, Prolog, SQL
-      - label: Development Tools & Technologies
-        details: Docker, Git, GitHub
+      - label: Development Tools & Frameworks
+        details: Docker, Git, GitHub, Flask, Numpy, Scipy, Pandas, Selenium, Tensorflow, SBT
     languages:
       - label: Swedish
         details: Native

@@ -10,7 +10,7 @@
 
 # Me
 
-Self-taught developer with a strong passion for computer science, physics, and mathematics. Highly proficient in Python and Scala, with experience in languages such as Rust, C/C++, and C#. Knowledgeable in data structures & algorithms ([LeetCode](https://leetcode.com/) and [Kattis](https://open.kattis.com/)), networking, graphics, physics simulation, and cybersecurity (Capture The Flag challenges), among other areas. Recently worked as a First Line Support Agent at Onitio Sverige AB, honing problem-solving and customer service skills under pressure. Eager to leverage a diverse skillset in a software engineering role, fueled by a long-standing passion for the field.
+Self-taught developer with a strong passion for computer science, physics, and mathematics. Highly proficient in Python and Scala, with experience in languages such as Rust, C/C++, and C#. Skilled in data structures & algorithms ([LeetCode](https://leetcode.com/) and [Kattis](https://open.kattis.com/)), networking, graphics, physics simulation, and cybersecurity (Capture The Flag challenges), among other areas. Recently worked as a First Line Support Agent at Onitio Sverige AB, honing problem-solving and customer service skills under pressure. Eager to leverage a diverse skillset in a software engineering role, fueled by a long-standing passion for the field.
 
 # Education
 
@@ -19,12 +19,12 @@ Self-taught developer with a strong passion for computer science, physics, and m
 - Aug 2024 – May 2029
 - Currently pursuing an integrated Bachelor's and Master's program in Computer Engineering, leading to a Civilingenjör (Master of Science in Engineering)
 
-## Anna Whitlocks gymnasium (Anna Whitlock's high school), High School Diploma in Natural Sciences - Life Science profile
+## Anna Whitlocks gymnasium, High School Diploma in Natural Sciences - Life Science profile
 
 - Aug 2021 – May 2023
 - Grades: 21.56/22.5 merit points.
-- Nominated participant, Molecular Frontiers symposium: A Nano Focus on Quantum Material, 2022.
 - Awarded a prestigious stipend, recognizing the top 3 of over 700 graduates for exceptional analytical abilities, teamwork, and other key strengths.
+- Selected participant at Molecular Frontiers symposium: A Nano Focus on Quantum Material, November 2022.
 
 # Experience
 
@@ -40,8 +40,7 @@ Self-taught developer with a strong passion for computer science, physics, and m
 
 - Oct 2022 – Aug 2023
 - Stockholm, Sweden
-- Delivered personalized on-site tutoring in natural sciences and Python, boosting students' confidence,
-- problem-solving skills, and grades.
+- Delivered personalized on-site tutoring in natural sciences and Python, boosting students' confidence, problem-solving skills, and grades.
 
 # Projects
 
@@ -55,7 +54,7 @@ Self-taught developer with a strong passion for computer science, physics, and m
 # Technologies
 
 - Languages: Python, Scala, Rust, C, C++, C#, HTML, CSS, Prolog, SQL
-- Development Tools & Technologies: Docker, Git, GitHub
+- Development Tools & Frameworks: Docker, Git, GitHub, Flask, Numpy, Scipy, Pandas, Selenium, Tensorflow, SBT
 # Languages
 
 - Swedish: Native
