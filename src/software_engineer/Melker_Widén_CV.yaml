@@ -13,7 +13,7 @@ cv:
     me:
       - Self-taught developer with a strong passion for computer science, physics, and mathematics. Highly proficient in
         Python and Scala, with experience in languages such as Rust, C/C++, and C#. Skilled in data
-        structures & algorithms ([LeetCode](https://leetcode.com/) and [Kattis](https://open.kattis.com/)),
+        structures && algorithms ([LeetCode](https://leetcode.com/) and [Kattis](https://open.kattis.com/)),
         networking, graphics, physics simulation, and cybersecurity (Capture The Flag challenges), among other areas.
         Recently worked as a First Line Support Agent at Onitio Sverige AB, honing problem-solving and customer service
         skills under pressure. Eager to leverage a diverse skillset in a software engineering role, fueled by a
@@ -68,9 +68,9 @@ cv:
           - "Techniques Used: Hexagonal Architecture"
     technologies:
       - label: Languages
-        details: Python, Scala, Rust, C, C++, C#, HTML, CSS, Prolog, SQL
-      - label: Development Tools & Frameworks
-        details: Docker, Git, GitHub, Flask, Numpy, Scipy, Pandas, Selenium, Tensorflow, SBT
+        details: Python, Scala, Java, Rust, C, C++, C#, HTML, CSS, JavaScript, TypeScript, Prolog, SQL, R
+      - label: Development Tools && Frameworks
+        details: Git, GitHub, Docker, Kubernetes, Flask, SvelteKit, Selenium, Tensorflow
     languages:
       - label: Swedish
         details: Native

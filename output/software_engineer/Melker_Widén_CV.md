@@ -10,7 +10,7 @@
 
 # Me
 
-Self-taught developer with a strong passion for computer science, physics, and mathematics. Highly proficient in Python and Scala, with experience in languages such as Rust, C/C++, and C#. Skilled in data structures & algorithms ([LeetCode](https://leetcode.com/) and [Kattis](https://open.kattis.com/)), networking, graphics, physics simulation, and cybersecurity (Capture The Flag challenges), among other areas. Recently worked as a First Line Support Agent at Onitio Sverige AB, honing problem-solving and customer service skills under pressure. Eager to leverage a diverse skillset in a software engineering role, fueled by a long-standing passion for the field.
+Self-taught developer with a strong passion for computer science, physics, and mathematics. Highly proficient in Python and Scala, with experience in languages such as Rust, C/C++, and C#. Skilled in data structures && algorithms ([LeetCode](https://leetcode.com/) and [Kattis](https://open.kattis.com/)), networking, graphics, physics simulation, and cybersecurity (Capture The Flag challenges), among other areas. Recently worked as a First Line Support Agent at Onitio Sverige AB, honing problem-solving and customer service skills under pressure. Eager to leverage a diverse skillset in a software engineering role, fueled by a long-standing passion for the field.
 
 # Education
 
@@ -53,8 +53,8 @@ Self-taught developer with a strong passion for computer science, physics, and m
 
 # Technologies
 
-- Languages: Python, Scala, Rust, C, C++, C#, HTML, CSS, Prolog, SQL
-- Development Tools & Frameworks: Docker, Git, GitHub, Flask, Numpy, Scipy, Pandas, Selenium, Tensorflow, SBT
+- Languages: Python, Scala, Java, Rust, C, C++, C#, HTML, CSS, JavaScript, TypeScript, Prolog, SQL, R
+- Development Tools && Frameworks: Git, GitHub, Docker, Kubernetes, Flask, SvelteKit, Selenium, Tensorflow
 # Languages
 
 - Swedish: Native
