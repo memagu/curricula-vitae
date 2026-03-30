@@ -1,7 +1,10 @@
 # curricula-vitae
+
 My curricula vitae made using [rendercv](https://github.com/rendercv/rendercv).
 
-- ## Software Engineering
+> Scripts require [uv](https://docs.astral.sh/uv/):
+
 <p justify="center">
-    <img src="./output/software_engineer/Melker_Widén_CV_1.png">
+    <img src="./out/mw_1.png">
+    <img src="./out/mw_2.png">
 </p>

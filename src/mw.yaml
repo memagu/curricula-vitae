@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Melker Widén
+  location: Lund, Sweden
+  email: melker.widen@gmail.com
+  phone: tel:+46 (0) 72-265 32 23
+  website: https://www.mewi.dev/
+  social_networks:
+    - network: LinkedIn
+      username: memagu
+    - network: GitHub
+      username: memagu
+  sections:
+    summary:
+      - Computer Engineering student at LTH with a 5.0 technical GPA.
+        Proficient in Python, Scala, and Java, with a focus on high-performance
+        systems (Rust, Zig, C++) and algorithmic problem-solving. Experienced
+        in full-stack development, technical support, and academic mentoring.
+    education:
+      - institution: Lunds Tekniska Högskola (LTH), Lund University
+        area: Computer Engineering
+        degree: Civilingenjör (Master of Science in Engineering)
+        start_date: 2024-08
+        end_date: 2029-05
+        highlights:
+          - Currently pursuing an integrated Bachelor's and Master's program in
+            Computer Engineering, leading to a Civilingenjör (Master of Science
+            in Engineering).
+          - 5.0 GPA in all technical courses to date.
+    experience:
+      - company: The Faculty of Engineering at Lund University
+        position: Teaching Assistant
+        location: Lund, Sweden
+        start_date: 2025-09
+        end_date: 2026-01
+        highlights:
+          - Mentored students in Scala programming for course EDAB05,
+            facilitating labs and providing technical guidance on core computer
+            science concepts.
+          - Managed the assessment and grading of programming assignments and
+            examinations, ensuring high academic standards.
+          - Provided forum-based support for algorithmic problem-solving and
+            assisted with the configuration of student development
+            environments.
+      - company: Onitio Sverige AB
+        position: 1st Line Support Agent
+        location: Stockholm, Sweden
+        start_date: 2024-01
+        end_date: 2024-08
+        highlights:
+          - Demonstrated clear and efficient communication under time-sensitive
+            and high-pressure environments, resolving complex technical issues
+            while improving customer satisfaction and self-sufficiency.
+          - Collaborated closely with the team to tackle complex issues, while
+            also independently managing phone support during on-call shifts,
+            making critical decisions to ensure smooth operations and maintain
+            service quality.
+          - Developed tools and scripts, reducing manual tasks and improving
+            service efficiency.
+    projects:
+      - name: njord
+        date: "[github.com/memagu/njord](https://github.com/memagu/njord)"
+        highlights:
+          - Developed a native desktop app to assist on-call support call logging and
+            work time registration, significantly reducing effort and time for
+            Onitio colleagues.
+          - "Tools Used: Python, SQLite, PySide6"
+          - "Techniques Used: Hexagonal Architecture"
+    technologies:
+      - label: Languages
+        details: Python, Java, Go, Zig, Scala, Rust, C, C++, C#, HTML, CSS, JavaScript, TypeScript, Prolog, SQL, R
+      - label: Development Tools && Frameworks
+        details: Linux, Git, GitHub, Docker, Kubernetes, Flask, SvelteKit, HTMX, Selenium, Tensorflow
+    languages:
+      - label: Swedish
+        details: Native
+      - label: English
+        details: Fluent
+design:
+  theme: engineeringresumes
+locale:
+  language: english
