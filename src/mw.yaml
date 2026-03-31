@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+
 cv:
   name: Melker Widén
   location: Lund, Sweden
@@ -68,9 +69,13 @@ cv:
           - "Techniques Used: Hexagonal Architecture"
     technologies:
       - label: Languages
-        details: Python, Java, Go, Zig, Scala, Rust, C, C++, C#, HTML, CSS, JavaScript, TypeScript, Prolog, SQL, R
+        details: \
+          Python, Java, Go, Zig, Scala, Rust, C, C++, C#, HTML, CSS,
+          JavaScript, TypeScript, Prolog, SQL, R
       - label: Development Tools && Frameworks
-        details: Linux, Git, GitHub, Docker, Kubernetes, Flask, SvelteKit, HTMX, Selenium, Tensorflow
+        details: \
+          Linux, Git, GitHub, Docker, Kubernetes, Flask, SvelteKit, HTMX,
+          Selenium, Tensorflow
     languages:
       - label: Swedish
         details: Native

@@ -81,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 3,
-    day: 30,
+    day: 31,
   ),
 )
 
@@ -184,9 +184,9 @@ Computer Engineering student at LTH with a 5.0 technical GPA. Proficient in Pyth
 
 == Technologies
 
-#strong[Languages:] Python, Java, Go, Zig, Scala, Rust, C, C++, C\#, HTML, CSS, JavaScript, TypeScript, Prolog, SQL, R
+#strong[Languages:] \\ Python, Java, Go, Zig, Scala, Rust, C, C++, C\#, HTML, CSS, JavaScript, TypeScript, Prolog, SQL, R
 
-#strong[Development Tools && Frameworks:] Linux, Git, GitHub, Docker, Kubernetes, Flask, SvelteKit, HTMX, Selenium, Tensorflow
+#strong[Development Tools && Frameworks:] \\ Linux, Git, GitHub, Docker, Kubernetes, Flask, SvelteKit, HTMX, Selenium, Tensorflow
 
 == Languages
 
