@@ -13,10 +13,11 @@ cv:
       username: memagu
   sections:
     summary:
-      - Computer Engineering student at LTH with a 5.0 technical GPA.
-        Proficient in Python, Scala, and Java, with a focus on high-performance
-        systems (Rust, Zig, C++) and algorithmic problem-solving. Experienced
-        in full-stack development, technical support, and academic mentoring.
+      - Computer Engineering student at LTH with a 4.41 cumulative GPA and a
+        5.0 average across all Computer Science coursework. Proficient in Python,
+        Scala, and Java, with a focus on high-performance systems (Rust, Zig,
+        C++) and algorithmic problem-solving. Experienced in full-stack
+        development, technical support, and academic mentoring.
     education:
       - institution: Lunds Tekniska Högskola (LTH), Lund University
         area: Computer Engineering
@@ -27,7 +28,7 @@ cv:
           - Currently pursuing an integrated Bachelor's and Master's program in
             Computer Engineering, leading to a Civilingenjör (Master of Science
             in Engineering).
-          - 5.0 GPA in all technical courses to date.
+          - 4.41 GPA, 5.0 in Computer Science.
     experience:
       - company: The Faculty of Engineering at Lund University
         position: Teaching Assistant
