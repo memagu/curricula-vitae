@@ -6,7 +6,7 @@
   name: "Melker Widén",
   title: "Melker Widén - CV",
   footer: context { [#emph[Melker Widén -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Sept 2026] ],
+  top-note: [ #emph[Last updated in Nov 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -80,8 +80,8 @@
   entries-highlights-space-between-bullet-and-text: 0.3em,
   date: datetime(
     year: 2026,
-    month: 9,
-    day: 4,
+    month: 11,
+    day: 12,
   ),
 )
 
@@ -100,7 +100,7 @@
 
 == Summary
 
-Computer Engineering student at LTH with a 4.41 cumulative GPA and a 5.0 average across all Computer Science coursework. Proficient in Python, Scala, and Java, with a focus on high-performance systems (Rust, Zig, C++) and algorithmic problem-solving. Experienced in full-stack development, technical support, and academic mentoring.
+Computer Engineering student at LTH with a 4.45 cumulative GPA and a 5.0 average across all Computer Science coursework. Proficient in Python, Scala, and Java, with a focus on high-performance systems (Rust, Zig, C++) and algorithmic problem-solving. Experienced in full-stack development, technical support, and academic mentoring.
 
 == Education
 
@@ -116,7 +116,7 @@ Computer Engineering student at LTH with a 4.41 cumulative GPA and a 5.0 average
   main-column-second-row: [
     - Currently pursuing an integrated Bachelor's and Master's program in Computer Engineering, leading to a Civilingenjör (Master of Science in Engineering).
 
-    - 4.41 GPA, 5.0 in Computer Science.
+    - 4.45 GPA, 5.0 in Computer Science.
 
   ],
 )
